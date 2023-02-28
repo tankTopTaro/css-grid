@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #39B5E0;
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    /* grid-template-columns: 300px 200px;
+    grid-template-columns: 2fr 1fr; */
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: 150px;
+    /* grid-template-rows: 200px 150px; */
+}
+
+.grid-item {
+    position: relative;
+    padding-top: 50px;
+    font-size: 20px;
+    background-color: #F5EA5A;;
+    color: #222;
+    border: 2px solid #fff;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: #ff7f80;
+}
+
+.grid-item::before {
+    content: 'Grid item';
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    top: 10px;
+    left: 15px;
+}
+
+.grid-item::after {
+    position: absolute;
+    font-size: 25px;
+    top: 10px;
+    right: 15px;
+    font-weight: bold;
+}
+
+.grid-item--1::after {
+    content: '1';
+}
+.grid-item--2::after {
+    content: '2';
+}
+.grid-item--3::after {
+    content: '3';
+}
+.grid-item--4::after {
+    content: '4';
+}
+.grid-item--5::after {
+    content: '5';
+}
+.grid-item--6::after {
+    content: '6';
+}
+.grid-item--7::after {
+    content: '7';
+}
+.grid-item--8::after {
+    content: '8';
+}
+.grid-item--9::after {
+    content: '9';
+}
+.grid-item--10::after {
+    content: '10';
+}
+.grid-item--11::after {
+    content: '11';
+}
